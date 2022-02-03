@@ -2,37 +2,44 @@ package com.bridgelabz.linecomparisonoops;
 import java.util.*;
 
 class LineComparisonUC4 {
+	Scanner sc = new Scanner(System.in);
+	 static int x1,x2,x3,x4,y1,y2,y3,y4;
+	 public static Double length1, length2;
 	
-	public void compare() {
-		Scanner sc = new Scanner(System.in);
+	 public void line1() {
+		
 
 		System.out.println("Enter the Co-ordinates of x1 and y1 : ");
 
-		int x1 = sc.nextInt();
-		int y1 = sc.nextInt();
+		 x1 = sc.nextInt();
+		 y1 = sc.nextInt();
 
 		System.out.println("Enter the Co-ordinates of x2 and y2 : ");
 
-		int x2 = sc.nextInt();
-		int y2 = sc.nextInt();
+		 x2 = sc.nextInt();
+		 y2 = sc.nextInt();
 
-		Double length1 = Math.sqrt((x2 - x1)^2  +  (y2 - y1)^2);
-
+		 length1 = Math.sqrt((x2 - x1)^2  +  (y2 - y1)^2);
+		System.out.println("Length of the given Line1 is : " + length1 + " units" );
+	 }
+	 public void line2() {
 		System.out.println("Enter the Co-ordinates of x3 and y3 : ");
 
-		int x3 = sc.nextInt();
-		int y3 = sc.nextInt();
+		 x3 = sc.nextInt();
+		 y3 = sc.nextInt();
 
 		System.out.println("Enter the Co-ordinates of x4 and y4 : ");
 
-		int x4 = sc.nextInt();
-		int y4 = sc.nextInt();
+	     x4 = sc.nextInt();
+		 y4 = sc.nextInt();
 
-		Double length2 = Math.sqrt((x4 - x3)^2  +  (y4 - y3)^2);
+		 length2 = Math.sqrt((x4 - x3)^2  +  (y4 - y3)^2);
 
-		System.out.println("Length of the given Line1 is : " + length1 + " units" );
+		
 		System.out.println("Length of the given Line2 is : " + length2 + " units" );
-
+	 }
+	 public void compare () {
+	
 		if(length1.compareTo(length2) == 1)
 			System.out.println("Length of Line 1 is greater than Line 2 ");
 		else if (length1.compareTo(length2) == -1)
@@ -45,6 +52,8 @@ class LineComparisonUC4 {
 public class LineComaprison {
 	public static void main(String[] args) {
 		LineComparisonUC4 a = new LineComparisonUC4();
+		a.line1();
+		a.line2();
 		a.compare();
 	}
 }
