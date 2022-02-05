@@ -3,8 +3,8 @@ import java.util.*;
 
 class LineComparisonUC4 {
 	Scanner sc = new Scanner(System.in);
-	static int x1,x2,x3,x4,y1,y2,y3,y4;
-	static Double length1, length2;
+	 int x1,x2,x3,x4,y1,y2,y3,y4;
+	 Double length1, length2;
 
 	public void inputLine1() {
 		System.out.println("Enter the Co-ordinates of x1 and y1 : ");
