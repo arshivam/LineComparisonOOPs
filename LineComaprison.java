@@ -4,9 +4,9 @@ import java.util.*;
 class LineComparisonUC4 {
 	Scanner sc = new Scanner(System.in);
 	static int x1,x2,x3,x4,y1,y2,y3,y4;
-	public static Double length1, length2;
+	static Double length1, length2;
 
-	public void line1() {
+	public void inputLine1() {
 		System.out.println("Enter the Co-ordinates of x1 and y1 : ");
 		x1 = sc.nextInt();
 		y1 = sc.nextInt();
@@ -18,7 +18,7 @@ class LineComparisonUC4 {
 		length1 = Math.sqrt((x2 - x1)^2  +  (y2 - y1)^2);
 		System.out.println("Length of the given Line1 is : " + length1 + " units" );
 	}
-	public void line2() {
+	public void inputLine2() {
 		System.out.println("Enter the Co-ordinates of x3 and y3 : ");
 		x3 = sc.nextInt();
 		y3 = sc.nextInt();
@@ -42,8 +42,8 @@ class LineComparisonUC4 {
 public class LineComaprison {
 	public static void main(String[] args) {
 		LineComparisonUC4 a = new LineComparisonUC4();
-		a.line1();
-		a.line2();
+		a.inputLine1();
+		a.inputLine2();
 		a.compare();
 	}
 }
